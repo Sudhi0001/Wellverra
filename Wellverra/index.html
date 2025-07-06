@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wellverra</title>
+    <!-- AOS CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+<!-- SEO Meta Tags -->
+<meta name="description" content="Wellverra offers personalized diet and wellness plans including weight gain, weight loss, PCOS, diabetes, and thyroid care. Start your health journey today.">
+<meta name="keywords" content="diet plans, weight loss, wellness, PCOS, diabetes, thyroid, health, Wellverra, keto, fitness, health coaching, Bangalore wellness">
+<meta name="author" content="Sudheendra G K">
+<meta name="robots" content="index, follow">
+
+<!-- Open Graph for social media (Facebook, LinkedIn) -->
+<meta property="og:title" content="Wellverra - Your Wellness Partner">
+<meta property="og:description" content="Customized diet and wellness plans for every body. Get expert-backed health support with Wellverra.">
+<meta property="og:image" content="https://yourdomain.com/logo.jpg"> <!-- use a full URL if hosted -->
+<meta property="og:url" content="https://yourdomain.com">
+<meta property="og:type" content="website">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Wellverra - Personalized Diet & Wellness Plans">
+<meta name="twitter:description" content="From weight gain to thyroid care, Wellverra covers it all.">
+<meta name="twitter:image" content="https://yourdomain.com/logo.jpg">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #F9F5EF;
+            color: #333;
+            margin: 0;
+            padding: 0 20px;
+}
+h1 {
+   
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+ h2, h3 {
+    color: #1C3D33;
+}
+h2{
+    text-align: center;
+}
+
+/* Header */
+header {
+    background-color: #1C3D33;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+/* Section Styles */
+.abtus, .plan, .clints {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+    margin-bottom: 30px;
+}
+
+/* Typography */
+p {
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+a {
+    color: #FF6B4A;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Grid Sections */
+.plan-grid, .clints-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.plan-item, .clints-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+}
+
+.plan-item img, .clints-item img, .abtus img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Button */
+.get-in-touch {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.get-in-touch button {
+    background-color: #FF6B4A;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.get-in-touch button:hover {
+    background-color: #e45d3e;
+}
+
+/* Footer */
+footer {
+    background-color: #1C3D33;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #FFD580;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: rgb(255, 255, 255);
+    margin: 0 8px;
+    font-size: 1.2rem;
+}
+
+.social-icons a:hover {
+    color: #6FBF73;
+}
+.clints {
+    background-color: #F9F5EF;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+    margin-bottom: 30px;
+}
+.clints h2 {
+    color: #1C3D33;
+}   
+    .clints-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+        text-align: center;
+    }
+    .clints-item {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+    }
+    
+    .get-your-plan-button {
+        text-align: center;
+        margin-top: 30px;
+    }
+    .get-your-plan-button button {
+        background-color: #e15822;
+        color: white;
+        padding: 12px 25px;
+        border: none;
+        border-radius: 6px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background 0.3s ease;
+    }
+    .get-your-plan-button button:hover {
+        background-color: #fbf6f5;
+    }
+    .plan-item h3, .clints-item h3 {
+        color: #1C3D33;
+    }
+    .plan-item p, .clints-item p {
+        color: #555;
+    }
+    .plan-item img, .clints-item img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+    .plan-item {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+    }
+    .plan-item h3 {
+        color: #1C3D33;
+    }
+    .plan-item p {
+        color: #555;
+    }
+    .plan-item img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+    .plan-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+    }
+    html {
+        scroll-behavior: smooth;
+    }
+    .pricing {
+    background-color: #F9F5EF;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+.pricing h2 {
+    color: #1C3D33;
+}   
+    .pricing-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+    }
+    .pricing-item {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+    }
+     .floating-logo {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 50px;
+      height: 50px;
+      z-index: 1000;
+      border-radius: 50%;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .floating-logo:hover {
+      transform: scale(1.1);
+    }
+
+    .floating-logo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .floating-logo:focus {
+      outline: none;
+    }
+    .faq {
+        background-color: white;
+        padding:30px;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+        margin-bottom: 30px;
+        }
+    .faq h2 {
+        color:#1c3d33;
+        margin-bottom: 20px;
+        }
+    .faq-item {
+        margin-bottom: 20px;
+    }
+    .faq-item h3{
+        color: #1C3D33;
+        margin-bottom: 5px;
+    }
+    .faq-item p{
+        color: #555;
+        margin: 0;
+    }
+</style>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <div class="header-container">
+        <img src="logo.jpg" alt="Logo" class="logo">
+        <h1>WellVerra</h1>
+        <p>Your partner in wellness and health...!</p>
+    </div>
+</header>
+
+<section class="abtus">
+    <h2 style="font-family: Algerian;">About Us</h2>
+    <p>At Wellverra, we are dedicated to enhancing your wellness journey. Our team of experts is committed to providing personalized health solutions that cater to your unique needs.</p>
+    </section>
+<section class="plan">
+    <h2>Our Plans</h2>  
+    <div class="plan-grid" data-aos="fade-up" data-aos-delay="100">
+        <div class="plan-item" data-aos="fade-up">
+            <img src="weightgain.jpg" alt="Plan 1">
+            <h3>Weight-Gain</h3>
+            <p>Includes personalized diet and exercise plans.</p>
+        </div>
+        <div class="plan-item" data-aos="fade-up" data-aos-delay="200">
+            <img src="loss.jpg" alt="Plan 2">
+            <h3>Weight-Loss</h3>
+            <p>Focuses on mental health and mindfulness practices.</p>
+        </div>
+        <div class="plan-item" data-aos="fade-up" data-aos-delay="300">
+            <img src="psos.jpg" alt="Plan 3">
+            <h3>PCOS</h3>
+            <p>A comprehensive plan for overall health improvement.</p>
+        </div>
+        <div class="plan-item" data-aos="fade-up" data-aos-delay="400">
+            <img src="diabatic.jpg" alt="Plan 4">
+            <h3>Diabetes</h3>
+            <p>Specialized care for managing diabetes effectively.</p>
+        </div>
+        <div class="plan-item" data-aos="fade-up" data-aos-delay="500">
+            <img src="thyroid.jpg" alt="Plan 5">
+            <h3>Thyroid</h3>
+            <p>Tailored solutions for thyroid health management.</p>
+        </div>
+        <div class="plan-item" data-aos="fade-up" data-aos-delay="600">
+            <img src="keto.jpg" alt="Plan 6">
+            <h3>Keto</h3>
+            <p>Holistic approach to managing keto symptoms.</p>
+        </div>
+    </div>
+</section>
+<section class="pricing-grid" >
+    <h2>Pricing & Payment Plans</h2>
+     <div class="plan-item"data-aos="fade-up" data-aos-delay="100">
+            <h3>Starter Plan</h3>
+            <p>₹499 / month</p>
+            <ul>
+                <li>Basic diet plan</li>
+                <li>Weekly check-in</li>
+                <li>WhatsApp Support</li>
+            </ul>
+            <div class="get-your-plan-button">
+  <a href="https://wa.me/916364800327?text=Hi!%20I%20want%20to%20purchase%20Starter%20plan" target="_blank" style="text-decoration: none;">
+    <div style="background-color: #FF6B4A; color: white; padding: 12px 25px; border-radius: 6px; font-size: 1rem; display: inline-block;">
+      💳 Talk About Payment
+    </div>
+  </a>
+</div>
+        </div>
+        <div class="plan-item"data-aos="fade-up"data-aos-delay="200">
+            <h3>Premium Plan</h3>
+            <p>₹999 / month</p>
+            <ul>
+                <li>Customized plan</li>
+                <li>Bi-weekly video calls</li>
+                <li>Priority Support</li>
+            </ul>
+            <div class="get-your-plan-button">
+  <a href="https://wa.me/916364800327?text=Hi!%20I%20want%20to%20purchase%20Premium%20plan" target="_blank" style="text-decoration: none;">
+    <div style="background-color: #FF6B4A; color: white; padding: 12px 25px; border-radius: 6px; font-size: 1rem; display: inline-block;">
+      💳 Talk About Payment
+    </div>
+  </a>
+</div>
+        </div>
+        <div class="plan-item"data-aos="fade-up"data-aos-delay="300">
+            <h3>Transformation Plan</h3>
+            <p>₹2499 / 3 months</p>
+            <ul>
+                <li>Goal-based diet & workout</li>
+                <li>Weekly video sessions</li>
+                <li>Progress tracking</li>
+            </ul>
+            <div class="get-your-plan-button">
+  <a href="https://wa.me/916364800327?text=Hi!%20I%20want%20to%20purchase%20Transformation%20plan" target="_blank" style="text-decoration: none;">
+    <div style="background-color: #FF6B4A; color: white; padding: 12px 25px; border-radius: 6px; font-size: 1rem; display: inline-block;">
+      💳 Talk About Payment
+    </div>
+  </a>
+</div>
+        </div>
+    </div>
+</section>
+<br>
+<br>
+<section class="clints-grid">
+    <h2>What Our Clients Say</h2>
+   
+        <div class="clints-item" data-aos="zoom-in">
+            
+            <h3>Vishal Prajwal</h3>
+            <p>"Wellverra has transformed my health journey. The personalized plans are effective and easy to follow."</p>
+            
+        </div>
+        <div class="clints-item" data-aos="zoom-in">
+            
+            <h3>Sudheendra G K</h3>
+            <p>"I love the support from the Wellverra team. They truly care about my wellness."</p>
+            
+        </div>
+        <div class="clints-item" data-aos="zoom-in">
+            <h3>Soumya C</h3>
+            <p>"The plans are well-structured and have helped me achieve my health goals."</p>
+            
+        </div>
+    </section>
+
+<section class="get-in-touch">
+    <h2>Get in Touch</h2>
+    <p>Ready to start your wellness journey? Contact us today!</p>
+</section>
+<div class="get-your-plan-button">
+  <a href="https://wa.me/916364800327?text=Hi!%20I%20want%20a%20custom%20diet%20plan" target="_blank" style="text-decoration: none">
+    <div style="background-color: #25D366; color: white; padding: 12px 25px; border-radius: 6px; font-size: 1rem; display: inline-block;">
+      📲 Get Your Plan
+    </div>
+  </a>
+</div>
+ <a href="#top" class="floating-logo" title="Back-To-Top">
+    <img src="logo.jpg" alt="back-to-top">
+ </a>
+ <br>
+ <br>
+ <section class="faq" data-aos="fade-up">
+  <h2>Frequently Asked Questions</h2>
+  <div class="faq-item">
+    <h3>1. What types of diet plans do you offer?</h3>
+    <p>Ans: We offer personalized plans for weight gain, weight loss, PCOS, thyroid, diabetes, and keto goals. Each plan is tailored to your body and lifestyle.</p>
+  </div>
+  <div class="faq-item">
+    <h3>2. How do I get started?</h3>
+    <p>Ans: Click on the “Get Your Plan” button or message us on WhatsApp. We’ll understand your goals and build a custom plan just for you.</p>
+  </div>
+  <div class="faq-item">
+    <h3>3. Are your plans suitable for beginners?</h3>
+    <p>Ans: Yes! Whether you're new to fitness or already active, our experts will guide you at every step.</p>
+  </div>
+  <div class="faq-item">
+    <h3>4. Is payment secure?</h3>
+    <p>Ans: Yes, We offer secure payment through trusted gateways and will confirm everything via WhatsApp for clarity.</p>
+  </div>
+  <div class="faq-item">
+    <h3>5. Can I switch my plan later?</h3>
+    <p>Ans: Absolutely. You can upgrade or change your plan anytime by messaging our support team.</p>
+  </div>
+</section>
+<footer>
+    <div class="footer-container">
+        <p>&copy; 2023 Wellverra. All rights reserved.</p>
+    </div>
+
+<div class="social-icons">
+    <a href="mailto:sudhig10@gmail.com">📩</a>
+    <a href="https://x.com/SGuppal11005"><i class="fab fa-twitter"></i></a>
+    <a href="https://www.instagram.com/sudheendra_a_1"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.linkedin.com/in/sudheendra-g-k027"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+   
+</footer>
+<!-- AOS JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+</body>
+</html>
